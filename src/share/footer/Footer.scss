@@ -1,0 +1,78 @@
+@import '../../general.scss';
+.Footer{
+    background: $naranja;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+
+    &-titulo{
+        margin: 0;
+        font-family: $nunito;
+        font-weight: 700;
+        color: $grisClaro;
+        letter-spacing: 2px;
+    }
+
+    &-redes{
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: stretch;
+        align-items: center;
+
+        &-item{
+            width: 35px;
+            height: 35px;
+            background: white;
+            text-decoration: none;
+            opacity: .2;
+            border-radius: 100%;
+            transition: all .4s;
+            cursor: pointer;
+            margin:15px 10px;
+            border: solid 2px $naranja;
+        }
+
+        :hover{
+            opacity: 1;
+            border: solid 2px white;
+        }
+    }
+    &-subtitulo{
+        margin: 0;
+        font-family: $nunito;
+        font-weight: 700;
+        color: $grisClaro;
+        letter-spacing: 2px;
+    }
+
+    &-numero{
+        margin-top: 10px;
+        padding: 10px 20px;
+        background: white;
+        opacity: .2;
+        transition: all .4s;
+        width: max-content;
+        border-radius: 100px;
+        font-weight: bold;
+        color: black;
+    }
+        &-numero:hover{
+            opacity: 1;
+            color: $gris;
+        }
+
+    &-bar{
+        width: 100vw;
+        height: 25px;
+        background: black;
+        opacity: .4;
+        margin-top: 25px;
+    }
+
+}
