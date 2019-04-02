@@ -14,7 +14,8 @@ export default class  Sesiones extends Component{
             {
                 data.map((item)=> {
                     return <Sesion
-                    {...item} />
+                    {...item}
+                    key={item.id} />
                 })
             }
                 <Sesion/>

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './Servicios.scss';
 
 // Componentes propios
-import Banner from './banner/Banner';
+import BannerServicios from './bannerServicios/BannerServicios';
 import Informacion from './informacion/Informacion';
 
 // Componentes compartidos
@@ -15,12 +15,15 @@ export default class Servicios extends Component{
         return(
             <section className="Servicios">
             <Nav/>
-            <Banner/>
+            <BannerServicios/>
             <Informacion/>
             <Footer/>
             </section>
         )
-        const item = document.getElementById("Servicios");
-        item.classList.add("itemActivo");
+       
  }
+ componentDidMount(){
+    const item = document.getElementById("Servicios");
+    item.classList.add("itemActivo");
+}
 }

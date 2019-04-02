@@ -35,10 +35,11 @@
     }
 
     &-imagen{
-        background: red;
+        background:$naranja;
         width: 100%;
         max-width: 500px;
         height: 300px;
+        padding-top: 80px;
     }
 }
 

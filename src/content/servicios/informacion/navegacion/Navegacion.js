@@ -4,9 +4,6 @@ import './Navegacion.scss';
 // Componentes compartidos
 
 export default class Navegacion extends Component{
-    constructor (props){
-        super(props);   
-    }
 
     change(show){
         var venta = document.getElementById("venta");

@@ -4,9 +4,6 @@ import './Menu.scss';
 // Componentes compartidos
 
 export default class Menu extends Component{
-    constructor (props){
-        super(props);   
-    }
 
     change(show){
         var who = document.getElementById("who");
