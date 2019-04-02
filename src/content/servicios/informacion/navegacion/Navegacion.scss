@@ -1,0 +1,22 @@
+@import '../../../../general.scss';
+
+.Navegacion{
+    &-item{
+    color: $gris;
+    font-size: 25px;
+    text-align: left;
+    letter-spacing: 1px;
+    opacity: .5;
+    transition: all .2s;
+    cursor: pointer;
+    text-align: center;
+    }
+
+    &-item:hover{
+        opacity: 1;
+    }
+}
+
+.activo{
+    opacity: 1;
+}

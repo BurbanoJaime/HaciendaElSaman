@@ -4,17 +4,18 @@ import Menu from './menu/Menu';
 import Texto from './texto/Texto';
 
 export default class Contenido extends Component{
+    
     constructor(props){
         super(props)
         this.showWho = this.showWho.bind(this);
         this.showHow = this.showHow.bind(this);
-
         this.state={
             show: false
         }
     }
 
     showWho(){
+        console.log("on who")
         this.setState({
             show:false,
         })
@@ -23,6 +24,7 @@ export default class Contenido extends Component{
     }
 
     showHow(){
+        console.log("on how")
         this.setState({
             show:true,
         })
