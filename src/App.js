@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons';
 
 import Home from './content/home/Home';
+import Nosotros from './content/nosotros/Nosotros';
 
 library.add( faAngleDoubleDown )
 
@@ -15,7 +16,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Home />
+        {/*<Home />*/}
+        <Nosotros />
       </div>
     );
   }

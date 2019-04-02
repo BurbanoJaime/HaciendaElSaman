@@ -9,8 +9,6 @@ export default class Nav extends Component{
     render(){
         return(
             <section className="Nav">
-
-                <div>Aquí va el logo</div>
                 <Logo />
                 <Item />
             </section>

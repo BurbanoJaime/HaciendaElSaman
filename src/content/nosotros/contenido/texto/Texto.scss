@@ -1,0 +1,77 @@
+@import '../../../../general.scss';
+
+.Texto{
+    width: 40vw;
+    &-bloqueUno{
+        background: white;
+        padding: 20px;
+        transition: all.5s;
+        opacity: 0;
+        position: absolute;
+        z-index: 10px;
+        width:40%;
+        
+        p{
+            text-align: justify;
+            font-family: $nunito;
+            color:$gris;
+        }
+        
+    }
+
+    &-bloqueDos{
+        transition: all.5s;
+        opacity: 0;
+        width: 110%; 
+
+        &-item{
+            padding: 15px 0;
+            background: white;
+            color: $gris;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            align-content: stretch;
+            transition: all.4s;
+
+            &-titulo{
+                font-family: $lato;
+                color: $naranja;
+                min-width: 30%;
+                margin-right: 10px;
+                h1{
+                    font-weight: 900;
+                    margin: 0;
+                    font-size: 30px;
+                }
+                h2{
+                    font-weight: 900;
+                    margin: 0;
+                    font-size: 18px;
+                }
+            }
+            
+            p{
+                font-family: $nunito;
+                text-align: justify;
+                padding-right: 20px;
+            }
+        }
+        &-item:nth-child(2){
+            .Texto-bloqueDos-item-titulo{
+                h1{
+                letter-spacing: 2px;
+                }
+            }
+        }
+        &-item:nth-child(3){
+            .Texto-bloqueDos-item-titulo{
+                h2{
+                letter-spacing: 3px;
+                }
+            }
+        }
+    }
+}

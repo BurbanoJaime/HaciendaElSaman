@@ -1,4 +1,5 @@
 import React  from 'react';
+import './Logo.scss';
 //import img from 'img/logo.svg';           
 
 //<img src={img} />
@@ -6,7 +7,8 @@ import React  from 'react';
 
 export default function Logo(props){
     return (
-        <div className="Logo">
-        </div>
+        <a href="#" className="Logo">
+        Aquí va el logo
+        </a>
     )
 }

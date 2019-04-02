@@ -7,3 +7,15 @@ $lato: 'Lato', sans-serif;
 $gris: #727272;
 $grisClaro: #EAEAEA;
 $naranja:#F4911E;
+
+.itemActivo{
+    opacity: 1 !important;
+    background: $naranja !important;
+    div{
+        color: white !important;
+    }
+}
+
+.visible{
+    opacity: 1;
+}
