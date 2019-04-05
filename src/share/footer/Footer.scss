@@ -19,7 +19,7 @@
 
     &-redes{
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         align-content: stretch;
@@ -36,11 +36,29 @@
             cursor: pointer;
             margin:15px 10px;
             border: solid 2px $naranja;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+
+            &-icon{
+                font-size: 20px;
+                border: none;
+                color: black;
+                opacity: .6;
+            }
         }
 
         :hover{
             opacity: 1;
             border: solid 2px white;
+
+            .Footer-redes-item-icon{
+                opacity: .6;
+            }
+            
         }
     }
     &-subtitulo{
