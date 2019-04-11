@@ -1,15 +1,72 @@
-.Nav{
+.Nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: stretch;
-    align-items: center;
+    align-content: flex-start;
+    align-items: flex-start;
     padding: 0 50px;
     background: #fff;
-    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
     position: fixed;
     width: calc(100vw - 100px);
     height: 75px;
     z-index: 50;
+}
+
+//Pantallas grandes
+@media only screen and (min-width:1200px) {
+    .Nav {
+        .Item {
+            &-clasico{
+                display: flex;
+            }
+            &-responsive{
+                display: none;
+            }
+        }
+    }
+}
+
+//Pantallas medianas
+@media only screen and (min-width:992px) and (max-width:1200px) {
+    .Nav {
+        .Item {
+            &-clasico{
+                display: flex;
+            }
+            &-responsive{
+                display: none;
+            }
+        }
+    }
+}
+
+//Pantallas pequeñas
+@media only screen and (min-width:768px) and (max-width:992px) {
+    .Nav {
+        .Item {
+            &-clasico{
+                display: none;
+            }
+            &-responsive{
+                display: flex;
+            }
+        }
+    }
+}
+
+//Pantallas extra pequeñas
+@media only screen and (max-width:768px) {
+    .Nav {
+
+        .Item {
+            &-clasico{
+                display: none;
+            }
+            &-responsive{
+                display: flex;
+            }
+        }
+    }
 }

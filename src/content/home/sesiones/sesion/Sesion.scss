@@ -35,11 +35,15 @@
     }
 
     &-imagen{
-        background:$naranja;
-        width: 100%;
-        max-width: 500px;
-        height: 300px;
-        padding-top: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        margin-top: 80px;
+        max-width: 540px;
+        img{
+            width: 100%;
+        }
     }
 }
 

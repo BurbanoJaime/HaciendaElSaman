@@ -1,4 +1,11 @@
 .Logo{
     cursor: pointer;
     text-decoration: none;
+    max-height: 75px;
+    max-width: 120px;
+    margin-top: 15px;
+    img{
+        width: 100%;
+        height: 100%;
+    }
 }
