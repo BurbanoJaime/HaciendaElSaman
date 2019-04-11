@@ -1,3 +1,100 @@
-.Home{
+.Home {
     overflow-x: hidden;
+}
+
+//Pantallas grandes
+@media only screen and (min-width:1200px) {}
+
+//Pantallas medianas
+@media only screen and (min-width:992px) and (max-width:1200px) {
+    .Home {
+        .Sesiones {
+            .Sesion {
+                &-contenido {
+                    margin-left: 10vw;
+
+                    &-titulo {
+                        max-width: 400px;
+                    }
+                }
+
+                &-imagen {
+                    max-width: 470px;
+                }
+            }
+
+            .Sesion:nth-child(2) {
+                .Sesion-contenido {
+                    margin-right: 10vw;
+
+                    &-titulo {
+                        max-width: 420px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+//Pantallas pequeñas
+@media only screen and (min-width:768px) and (max-width:992px) {
+    .Home {
+        .Sesiones {
+            margin:100px 0;
+
+            .Sesion {
+                margin: 0 5vw;
+                margin-bottom: 50px;
+                &-contenido {
+                    margin: 0;
+                    width: 100vw;
+                    &-contenido{
+                        max-width: 100%;
+                    }
+                }
+
+                &-imagen {
+                    display: none;
+                }
+            }
+            .Sesion:nth-child(2) {
+                .Sesion-contenido {
+                    margin-right: 0;
+                }
+
+            }
+        }
+    }
+}
+
+//Pantallas extra pequeñas
+@media only screen and (max-width:768px) {
+    .Home {
+        .Sesiones {
+            margin:100px 0;
+
+            .Sesion {
+                margin: 0 5vw;
+                margin-bottom: 50px;
+                &-contenido {
+                    margin: 0;
+                    width: 100vw;
+                    &-contenido{
+                        max-width: 100%;
+                    }
+                }
+
+                &-imagen {
+                    display: none;
+                }
+            }
+            .Sesion:nth-child(2) {
+                .Sesion-contenido {
+                    margin-right: 0;
+                }
+
+            }
+        }
+    }
 }

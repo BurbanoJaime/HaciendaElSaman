@@ -6,10 +6,9 @@ import './Banner.scss';
 
 export default function Banner(props){
     return (
-        <div className="Banner" style={{
-            backgroundImage: "url('/img/banner.png')"
-        }}>
-        <FontAwesomeIcon icon="angle-double-down" className="Banner-icon"/>
+        <div className="Banner" >
+            <img src={process.env.PUBLIC_URL + '/img/banner.png'} className="Banner-fondo" />
+            <FontAwesomeIcon icon="angle-double-down" className="Banner-icon"/>
         </div>
     )
 }

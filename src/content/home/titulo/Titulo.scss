@@ -1,12 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700');
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+@import '../../../general.scss';
 
-$nunito: 'Nunito', sans-serif;
-$lato: 'Lato', sans-serif;
-
-$gris: #727272;
-$grisClaro: #EAEAEA;
-$naranja:#F4911E;
 .Titulo {
     background: linear-gradient(to right, #F77800, #FBC73B);
     height: 300px;

@@ -94,3 +94,28 @@
     }
 
 }
+
+//Pantallas grandes
+@media only screen and (min-width:1200px) {
+   
+}
+
+//Pantallas medianas
+@media only screen and (min-width:992px) and (max-width:1200px) {
+    
+}
+
+//Pantallas pequeñas
+@media only screen and (min-width:768px) and (max-width:992px) {
+  
+}
+
+//Pantallas extra pequeñas
+@media only screen and (max-width:768px) {
+    .Footer{
+        &-titulo{
+            max-width: 80vw;
+        }
+    }
+  
+}
