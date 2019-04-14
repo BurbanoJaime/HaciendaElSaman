@@ -7,20 +7,28 @@ import Titulo from './titulo/Titulo';
 import Sesiones from './sesiones/Sesiones';
 
 // Componentes compartidos
-import Nav from '../../share/nav/Nav';
 import Footer from '../../share/footer/Footer';
 
 export default class Home extends Component{
     render(){
         return(
             <section className="Home">
-            {<Nav/>}
-            <Banner/>
-            <Titulo/>
-            <Sesiones/>
-            <Footer/>
-
+                <Banner/>
+                <Titulo/>
+                <Sesiones/>
             </section>
         )
+    }
+    componentDidMount(){
+        const nosotros = document.getElementById("Nosotros");
+        const servicios = document.getElementById("Servicios");
+        const genetica = document.getElementById("Genetica");
+        const contacto = document.getElementById("Contacto");
+
+        nosotros.classList.remove("itemActivo");
+        servicios.classList.remove("itemActivo");
+        genetica.classList.remove("itemActivo");
+        contacto.classList.remove("itemActivo");
+
     }
 }

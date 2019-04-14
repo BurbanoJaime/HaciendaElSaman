@@ -66,3 +66,10 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+##INSTALAR
+VSCode React Component Generator
+Material Theme
+IntelliSense for CSS class name in HTML
+Bracket Pair Colorizer
+Carpeta .VSCODE es la configuración de VSCode React Component Generator

@@ -6,24 +6,28 @@ import BannerServicios from './bannerServicios/BannerServicios';
 import Informacion from './informacion/Informacion';
 
 // Componentes compartidos
-import Nav from '../../share/nav/Nav';
-import Footer from '../../share/footer/Footer';
 
 export default class Servicios extends Component{
 
     render(){
         return(
             <section className="Servicios">
-            <Nav/>
             <BannerServicios/>
             <Informacion/>
-            <Footer/>
             </section>
         )
        
  }
- componentDidMount(){
-    const item = document.getElementById("Servicios");
-    item.classList.add("itemActivo");
-}
+    componentDidMount(){
+        const nosotros = document.getElementById("Nosotros");
+        const servicios = document.getElementById("Servicios");
+        const genetica = document.getElementById("Genetica");
+        const contacto = document.getElementById("Contacto");
+
+        nosotros.classList.remove("itemActivo");
+        servicios.classList.add("itemActivo");
+        genetica.classList.remove("itemActivo");
+        contacto.classList.remove("itemActivo");
+
+    }
 }

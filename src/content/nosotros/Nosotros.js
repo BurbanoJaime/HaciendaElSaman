@@ -4,26 +4,27 @@ import './Nosotros.scss';
 // Componentes propios
 import Contenido from './contenido/Contenido';
 
-// Componentes compartidos
-import Nav from '../../share/nav/Nav';
-import Footer from '../../share/footer/Footer';
-
 export default class Nosotros extends Component{
 
 
     render(){
         return(
             <section className="Nosotros">
-            <Nav/>
-            <Contenido/>
-            <Footer/>
-                 
+            <Contenido/>                 
             </section>
         )
     }
 
     componentDidMount(){
-        const item = document.getElementById("Nosotros");
-        item.classList.add("itemActivo");
+        const nosotros = document.getElementById("Nosotros");
+        const servicios = document.getElementById("Servicios");
+        const genetica = document.getElementById("Genetica");
+        const contacto = document.getElementById("Contacto");
+
+        nosotros.classList.add("itemActivo");
+        servicios.classList.remove("itemActivo");
+        genetica.classList.remove("itemActivo");
+        contacto.classList.remove("itemActivo");
+
     }
 }
