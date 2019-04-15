@@ -1,0 +1,98 @@
+@import '../../../general.scss';
+
+.Formulario {
+    width: 50vw;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $nunito;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:center;
+    align-content: flex-end;
+    margin-right: 50px;
+
+    &-titulo{
+        font-weight: 700;
+        font-family: $nunito;
+        color:$naranja;
+        font-size: 35px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    form {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: left;
+        justify-content: center;
+
+        label {
+            width: 40%;
+            font-weight: 600;
+            color: rgb(51, 51, 51);
+            margin: 8px 5%;
+            
+            input, textarea {
+                box-sizing: border-box;
+                width: 100%;
+                height: 30px;
+                padding:0 15px;
+                color: $gris;
+                border: none;
+                background: #f3f3f3;
+                font-family: $nunito;
+                margin-top: 2px;
+            }
+            textarea{
+                padding: 5px 15px;
+                min-width: 100%;
+                max-width: 100%;
+                min-height: 120px;
+            }
+        }
+
+        label:before{
+            content: "*";
+            color: $naranja;
+            font-weight: 700;
+            padding-right: 5px;
+        }
+
+        .Formulario-asunto{
+            width: 100%;
+            input{
+                width: 45%;
+            }
+        }
+        .Formulario-texto{
+            width: 90%;
+        }
+    }
+
+    &-btns{
+        button{
+            background: white;
+            border: solid 2px $naranja;
+            color: $naranja;
+            font-weight: 700;
+            font-family: $nunito;
+            font-size: 15px;
+            cursor: pointer;
+            padding: 7px 25px;
+            margin: 30px;
+            transition: all .2s;
+        }
+
+        button:hover{
+            background: $naranja;
+            color: white;
+            box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
+
+        }
+    }
+}

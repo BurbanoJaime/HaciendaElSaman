@@ -15,7 +15,7 @@ export default function Item(props){
             <Link to="/nosotros" className="Item-menu-link" id="Nosotros"> <div>NOSOTROS</div> </Link>
             <Link to="/servicios" className="Item-menu-link" id="Servicios"> <div>SERVICIOS</div> </Link>
             <Link to="/" className="Item-menu-link" id="Genetica"> <div>GENETICA</div> </Link>
-            <Link to="/" className="Item-menu-link" id="Contacto"> <div>CONTACTO</div> </Link>
+            <Link to="/contacto" className="Item-menu-link" id="Contacto"> <div>CONTACTO</div> </Link>
             </div>        
         </div>
     )

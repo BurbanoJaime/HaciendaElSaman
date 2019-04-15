@@ -1,0 +1,17 @@
+.Contacto{
+    overflow-x: hidden;
+    height: calc(100vh - 75px);
+    padding-top: 75px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+}

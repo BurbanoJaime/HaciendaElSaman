@@ -9,6 +9,7 @@ import Layout from './Layout';
 import Home from './content/home/Home';
 import Nosotros from './content/nosotros/Nosotros';
 import Servicios from './content/servicios/Servicios';
+import Contacto from './content/contacto/Contacto';
 import * as routes from './constants/routes';
 
 library.add( faAngleDoubleDown, faBars )
@@ -24,6 +25,7 @@ class App extends Component {
                 <Route exact path={routes.HOME} component={() => <Home />} />
                 <Route exact path={routes.NOSOTROS} component={() => <Nosotros />} />
                 <Route exact path={routes.SERVICIOS} component={() => <Servicios />} />
+                <Route exact path={routes.CONTACTO} component={() => <Contacto />} />
             </Layout>
           </Switch>
         </Router>
