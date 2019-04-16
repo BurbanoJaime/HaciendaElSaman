@@ -8,7 +8,7 @@ render(){
     return(   
         <article className="Formulario">
         <h1 className="Formulario-titulo">ENVÍANOS UN MENSAJE</h1>
-            <form>
+            <form action="/send.php" name="frm" method="GET">
                 <label for="nombre">
                     Nombres
                     <br />

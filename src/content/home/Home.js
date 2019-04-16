@@ -6,9 +6,6 @@ import Banner from './banner/Banner';
 import Titulo from './titulo/Titulo';
 import Sesiones from './sesiones/Sesiones';
 
-// Componentes compartidos
-import Footer from '../../share/footer/Footer';
-
 export default class Home extends Component{
     render(){
         return(
@@ -19,6 +16,7 @@ export default class Home extends Component{
             </section>
         )
     }
+    
     componentDidMount(){
         const nosotros = document.getElementById("Nosotros");
         const servicios = document.getElementById("Servicios");
