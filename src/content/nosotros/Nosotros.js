@@ -4,6 +4,7 @@ import './Nosotros.scss';
 // Componentes propios
 import Contenido from './contenido/Contenido';
 
+
 export default class Nosotros extends Component{
 
 

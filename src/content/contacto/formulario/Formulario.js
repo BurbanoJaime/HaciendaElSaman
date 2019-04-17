@@ -1,4 +1,4 @@
-import React, { Component, Row } from 'react';
+import React, { Component } from 'react';
 import './Formulario.scss';
 
 export default class Formulario extends Component{

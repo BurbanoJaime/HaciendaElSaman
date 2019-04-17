@@ -11,7 +11,7 @@ export default class Sesion extends Component {
                 </div>
 
                 <div className="Sesion-imagen">
-                    <img src={process.env.PUBLIC_URL + this.props.img} />
+                    <img alt="Imágenes de vacas jersey de la Hacienda El Samán" src={process.env.PUBLIC_URL + this.props.img} />
                 </div>
             </div>
         )

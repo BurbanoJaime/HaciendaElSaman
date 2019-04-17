@@ -12,6 +12,9 @@ import Servicios from './content/servicios/Servicios';
 import Contacto from './content/contacto/Contacto';
 import * as routes from './constants/routes';
 
+import { Provider } from 'react-redux';
+import Store from './redux/store';
+
 library.add( faAngleDoubleDown, faBars )
 
 
@@ -19,6 +22,7 @@ class App extends Component {
  render() {
     return (
       <div className="App">
+      <Provider store={Store}>
         <Router>
           <Switch>
             <Layout>
@@ -29,6 +33,7 @@ class App extends Component {
             </Layout>
           </Switch>
         </Router>
+      </Provider>
       </div>
     );
   }

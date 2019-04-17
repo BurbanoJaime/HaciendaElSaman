@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+
 import './Contenido.scss';
 import Menu from './menu/Menu';
 import Texto from './texto/Texto';
 
-export default class Contenido extends Component{
+class Contenido extends Component{
     
     constructor(props){
         super(props)
@@ -34,14 +36,34 @@ export default class Contenido extends Component{
 
 
     render(){
+        const { nosotros } = this.props;
+
+        console.log (nosotros);
+
         return(
             <section className="Contenido" style={{
                 backgroundImage: "url('/img/fondoNosotros.png')"
             }}>
-                <Menu ref="menu" action={this.showWho} showHow={this.showHow}/>
-                <Texto ref="texto"/>
+                <Menu 
+                ref="menu"
+                action={this.showWho}
+                showHow={this.showHow}
+                nosotros = {nosotros}
+                />
+
+                <Texto ref="texto"/> 
             </section>
         )
     }
 
 }
+
+
+const mapStateToProps = (state) => {
+    return{
+        nosotros: state.nosotros
+    };
+}
+
+
+export default connect(mapStateToProps)(Contenido);
